@@ -36,8 +36,9 @@ header {
 }
 
 .logo-image {
-    height: 60px;
-    width: auto;
+    height: auto;
+    width: 300px;
+    max-width: 100%;
 }
 
 nav ul {
@@ -97,6 +98,7 @@ main {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    border: 1px solid var(--gold);
 }
 
 .instagram-post:hover {
