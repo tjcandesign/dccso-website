@@ -15,19 +15,20 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
 }
 
 header {
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
-    border-bottom: 1px solid #eee;
 }
 
 .logo {
@@ -52,9 +53,12 @@ nav ul {
 }
 
 nav a {
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 29px;
     transition: color 0.3s ease;
 }
 
@@ -71,10 +75,14 @@ main {
 
 .hero {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/WRK09063-topaz-denoise-faceai-sharpen.jpg') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/WRK09063-topaz-denoise-faceai-sharpen.jpg') center/cover;
     color: white;
-    margin: -2rem -1rem 2rem;
-    padding: 8rem 2rem;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -85,7 +93,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 100%);
     z-index: 1;
 }
 
