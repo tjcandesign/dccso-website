@@ -58,10 +58,36 @@ main {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1610725663727-08695a1ac3ff?q=80&w=1200') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-bg.jpg') center/cover;
     color: white;
     margin: -2rem -1rem 2rem;
     padding: 6rem 2rem;
+}
+
+.instagram-feed {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.instagram-post {
+    position: relative;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.instagram-post:hover {
+    transform: scale(1.05);
 }
 
 .hero h1 {
